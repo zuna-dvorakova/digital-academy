@@ -4,7 +4,7 @@ character_count = {}
 
 with open("alice.txt", encoding="utf-8") as file:
     for character in file.read().lower():
-        if character not in [' ', '\n']:
+        if character not in [" ", "\n"]:
             if character in character_count:
                 character_count[character] += 1
             else:
